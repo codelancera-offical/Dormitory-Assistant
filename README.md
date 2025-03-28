@@ -34,3 +34,7 @@ The code is also based on its github repo:
 
 - [Audio Data Processing in Python](https://www.youtube.com/watch?v=ZqpSb5p1xQo)
 - [Vosk](https://alphacephei.com/vosk/install)
+
+### Raspberry Pi
+
+- [Set up Code-Server on Raspberry Pi](https://snapcraft.io/install/code-server/raspbian)
