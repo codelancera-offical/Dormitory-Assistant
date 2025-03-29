@@ -1,0 +1,44 @@
+# Byte-compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.env/
+.venv/
+env/
+
+# IDE specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build and distribution
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Logs and databases
+*.log
+*.sqlite3
+
+# Test files
+*.pytest_cache/
+.coverage
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# VOSK specific
+model-spk/  # Speaker models
+vosk-model-*/  # ASR models (adjust pattern as needed)
+
+# Media files (if you don't want to track them)
+*.mp4
+
+# System files
+.DS_Store
+Thumbs.db
