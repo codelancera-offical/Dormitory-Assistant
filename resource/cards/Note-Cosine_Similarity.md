@@ -3,7 +3,7 @@
 # Esseence
 
 # Geometric Interpretation
-[eg](../pics/eg_pic.jpg)
+![eg](../pics/eg_pic.jpg)
 
 # Example
 
