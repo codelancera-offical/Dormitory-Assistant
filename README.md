@@ -28,6 +28,13 @@ The code is also based on its github repo:
 1. Chosen the example project to replicate. Plan to start building after toefl test.
 2. Add a Vosk jupyter notebook file to test its speaker Identification functions.
 
+2025-03-31
+
+1. Add fingerprints
+2. Assign cosine_similarity works to jlz.
+
+- Prepare to build classification Program
+
 ## Resources
 
 ### Audio Processing
