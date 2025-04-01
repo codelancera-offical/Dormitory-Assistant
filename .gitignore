@@ -38,7 +38,12 @@ vosk-model-*/  # ASR models (adjust pattern as needed)
 
 # Media files (if you don't want to track them)
 *.mp4
+*.png
+
 
 # System files
 .DS_Store
 Thumbs.db
+
+# zip files
+*.zip
