@@ -1,6 +1,6 @@
 # Definition
 
-# Esseence
+# Essence
 
 # Geometric Interpretation
 ![eg](../pics/eg_pic.jpg)

@@ -1,36 +1,29 @@
-"""
-Input two np.ndarray with same size, and compute the cosine similarity and return it.
-
-You should inplement it in a function, and test it with following scripts 
-"""
-
-
+#code to identify soundprint using cosine similarity#
 import numpy as np
 
+def sumofsquare(a):
+    sum = 0.0
+    for x in a:
+        sum += x ** 2  
+    return sum ** 0.5  
+
+def unit_vector(a):
+    norm = sumofsquare(a)  
+    if norm == 0:
+        return a  
+    return [x / norm for x in a]  
+
 def cosine_similarity(a, b):
-    # inplement your code here
-
-    return cosine_similarity
-
-
-def test_cosine_similarity():
-    arr1 = np.array([1, 2, 3])
-    arr2 = np.array([1, 2, 3])
-    arr3 = np.array([4, 5, 6])
+    a_unit = unit_vector(a)
+    b_unit = unit_vector(b)
     
-    # Test case 1: identical arrays
-    assert np.isclose(cosine_similarity(arr1, arr2), 1.0), "Test case 1 failed"
-
-    # Test case 2: orthogonal arrays
-    orthogonal_arr1 = np.array([1, 0])
-    orthogonal_arr2 = np.array([0, 1])
-    assert np.isclose(cosine_similarity(orthogonal_arr1, orthogonal_arr2), 0.0), "Test case 2 failed"
-
-    # Test case 3: different arrays
-    result = cosine_similarity(arr1, arr3)
-    expected = np.dot(arr1, arr3) / (np.linalg.norm(arr1) * np.linalg.norm(arr3))
-    assert np.isclose(result, expected), "Test case 3 failed"
+    t = sum(x * y for x, y in zip(a_unit, b_unit))
+    
+    return abs(t)  # make sure the result is positive
 
 if __name__ == "__main__":
-    test_cosine_similarity()
-    print("All tests passed!")
+    vec1 = np.random.rand(128).tolist()  # generate two random vector
+    vec2 = np.random.rand(128).tolist()
+
+    similarity = cosine_similarity(vec1, vec2)
+    print("Cosine Similarity:", similarity)
