@@ -37,6 +37,10 @@ The code is also based on its github repo:
 
 ## Resources
 
+### Cheatsheet
+
+- [Git](./resource/cards/Note-Git.md)
+
 ### Audio Processing
 
 - [Audio Data Processing in Python](https://www.youtube.com/watch?v=ZqpSb5p1xQo)
